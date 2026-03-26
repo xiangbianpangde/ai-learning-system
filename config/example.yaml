@@ -1,0 +1,72 @@
+# AI Learning System Configuration Example
+# 复制此文件为 config.yaml 并根据实际需求修改
+
+# 模型配置
+model:
+  # 学习模型（edict 框架中配置）
+  learning_model: "qwen3.5-plus"
+  # OCR 引擎
+  ocr_engine: "paddleocr"
+  # 温度参数
+  temperature: 0.7
+
+# 缓存配置
+cache:
+  # 缓存 TTL（秒）
+  ttl: 3600
+  # 是否启用 Redis 缓存
+  use_redis: false
+  # Redis 连接（如启用）
+  # redis_url: "redis://localhost:6379/0"
+
+# PDF 解析配置
+pdf_parser:
+  # 最大文件大小（MB）
+  max_file_size: 50
+  # 是否启用 OCR（针对扫描版 PDF）
+  enable_ocr: true
+  # 是否启用公式识别
+  enable_formula_recognition: true
+  # 是否启用表格识别
+  enable_table_recognition: true
+
+# 知识图谱配置
+knowledge_graph:
+  # 最大知识点数量
+  max_nodes: 500
+  # 最小关联强度阈值
+  min_relation_strength: 0.3
+  # 是否自动扩展关联
+  auto_expand: true
+
+# 学习计划配置
+learning_plan:
+  # 默认学习时长（小时）
+  default_duration: 48
+  # 每日最大学习时间（小时）
+  max_daily_hours: 8
+  # 是否包含复习时间
+  include_review: true
+
+# 费曼检测配置
+feynman:
+  # 检测轮次
+  num_rounds: 3
+  # 通过阈值（0-1）
+  pass_threshold: 0.8
+  # 是否生成改进建议
+  generate_suggestions: true
+
+# 降阶法教学配置
+progressive_teaching:
+  # 难度级别（1-5）
+  levels: 5
+  # 初始难度级别
+  initial_level: 3
+  # 是否自动调整难度
+  auto_adjust: true
+
+# 日志配置
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
