@@ -31,3 +31,12 @@ edict/frontend/node_modules/
 # Backups
 *.bak*
 data
+
+# Test coverage
+.coverage
+htmlcov/
+
+# Test artifacts
+tests/pdf_samples/
+*.mp4
+*.gif
