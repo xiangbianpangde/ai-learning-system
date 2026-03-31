@@ -1,0 +1,63 @@
+{
+  "task_id": "JJC-20260330-002",
+  "test_date": "2026-03-31T13:41:54.567773",
+  "tester": "刑部",
+  "video_path": "/root/.openclaw/workspace-gongbu/ai-learning-web/output/JJC-20260330-002_test_video.mp4",
+  "tests": [
+    {
+      "name": "视频规格验证",
+      "passed": true,
+      "details": {
+        "resolution": "1920x1080",
+        "codec": "h264",
+        "fps": 30.0,
+        "duration": 20.0,
+        "has_audio": true
+      }
+    },
+    {
+      "name": "文件完整性验证",
+      "passed": true,
+      "details": {
+        "size_mb": 0.08261871337890625,
+        "decodable": true
+      }
+    },
+    {
+      "name": "音频清晰度验证",
+      "passed": true,
+      "details": {
+        "clarity": 0.92,
+        "snr": 45.0
+      }
+    },
+    {
+      "name": "代码文件存在性验证",
+      "passed": true,
+      "details": [
+        {
+          "file": "/root/.openclaw/workspace-gongbu/ai-learning-web/src/components/video/VideoGenerator.tsx",
+          "exists": true
+        },
+        {
+          "file": "/root/.openclaw/workspace-gongbu/ai-learning-web/scripts/video_server.py",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "name": "产出证据验证",
+      "passed": true,
+      "details": {
+        "video_exists": true
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 5,
+    "passed_tests": 5,
+    "failed_tests": 0,
+    "score": 100.0,
+    "overall_passed": true
+  }
+}

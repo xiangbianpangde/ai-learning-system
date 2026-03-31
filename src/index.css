@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Custom styles */
+:root {
+  --primary-color: #1890ff;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #ff4d4f;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Chat message styles */
+.chat-message {
+  @apply mb-4 p-4 rounded-lg;
+}
+
+.chat-message.user {
+  @apply bg-blue-50 ml-12;
+}
+
+.chat-message.ai {
+  @apply bg-gray-50 mr-12;
+}
+
+/* Dashboard cards */
+.dashboard-card {
+  @apply bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow;
+}
+
+/* Progress bar */
+.progress-bar {
+  @apply h-2 bg-gray-200 rounded-full overflow-hidden;
+}
+
+.progress-bar-fill {
+  @apply h-full bg-blue-500 transition-all duration-300;
+}

@@ -1,0 +1,52 @@
+{
+  "task_id": "JJC-20260330-002",
+  "selftest_date": "2026-03-31T13:52:53.543840",
+  "tester": "尚书省 (自评)",
+  "scores": [
+    {
+      "name": "视频质量",
+      "score": 30,
+      "max_score": 30,
+      "details": {
+        "resolution": "1920x1080",
+        "codec": "h264",
+        "duration": 20.0
+      }
+    },
+    {
+      "name": "音频质量",
+      "score": 20,
+      "max_score": 20,
+      "details": {
+        "has_audio": true
+      }
+    },
+    {
+      "name": "测试覆盖率",
+      "score": 25,
+      "max_score": 25,
+      "details": {
+        "total_tests": 5,
+        "passed_tests": 5,
+        "pass_rate": 1.0
+      }
+    },
+    {
+      "name": "文档与证据",
+      "score": 25,
+      "max_score": 25,
+      "details": {
+        "video_exists": true,
+        "report_exists": true,
+        "code_complete": true
+      }
+    }
+  ],
+  "summary": {
+    "total_score": 100,
+    "max_score": 100,
+    "percentage": 100.0,
+    "grade": "A",
+    "passed": true
+  }
+}
